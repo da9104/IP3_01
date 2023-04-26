@@ -2,6 +2,7 @@
 let latitude;
 let longitude;
 let data;
+let nameElement = document.querySelector(".places")
 
 /*console.log("test")
 function getLocation(){
@@ -10,29 +11,23 @@ function getLocation(){
 
 //const key = '5ae2e3f221c38a28845f05b6e0fd8459aa247818bb4d27e011639812'
 
-/*function getAttractions(latitude,longitude){
-  let api= `http://api.opentripmap.com/0.1/en/places/radius?radius=1000&lon=`+longitude+`&lat=`+latitude+`&rate=2&format=json&limit=5&apikey=5ae2e3f221c38a28845f05b6e0fd8459aa247818bb4d27e011639812`
-
-  fetch(api)
-    .then(response => response.json())
-    .then(data => resolve(data))
-    .catch(function(err) {
-      console.log("Fetch Error :-S", err);
-    });
-
-}*/
-
+for (let i = 0; i < 5; i++){
 $.getJSON("http://api.opentripmap.com/0.1/en/places/radius?radius=1000&lon=-4.246450&lat=55.867850&rate=2&format=json&limit=5&apikey=5ae2e3f221c38a28845f05b6e0fd8459aa247818bb4d27e011639812").then(function(data) {
-  var text = `Name:${data[0].name}<br>
-  Distance:${data[0].dist}<br>
-  Rating:${data[0].rate}`
+  let text = `Name: `+`${data[i].name}`
+  //` Distance: `+`${data[i].dist}`+
+ // ` Rating: `+`${data[i].rate}`
 
-  var str = JSON.stringify(text)
+  let str = JSON.stringify(text)
   console.log(str);
+  return str;
+})
+.then(function(){
+  displayAttractions();
 });
+}
 
-function displayAttractions(){
-  
+function displayAttractions(str){
+  nameElement.innerHTML= `${str}`;
 }
 
  //http://api.opentripmap.com/0.1/en/places/radius?radius=1000&lon=-4.246450&lat=55.867850&rate=2&format=json&limit=5&apikey=5ae2e3f221c38a28845f05b6e0fd8459aa247818bb4d27e011639812
