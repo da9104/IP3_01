@@ -30,10 +30,9 @@ if('geolocation' in navigator){
 function setPosition(position){
     let latitude = position.coords.latitude;
     let longitude = position.coords.longitude;
-
+    
     getWeather(latitude, longitude);
 }
-
 
 // SHOW ERROR WHEN THERE IS AN ISSUE WITH GEOLOCATION SERVICE
 function showError(error){

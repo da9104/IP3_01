@@ -3,13 +3,13 @@
   padding: 0px;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
-  
+
 }
 
 body {
   /* background-color: #b4ceaa; */
   /* background-image: url(../images/launch2.jpeg) ; */
-  
+
   /* font: 16px "Quicksand", "Calibri"; */
 }
 
@@ -23,9 +23,14 @@ h1 {
   text-decoration: none;
 }
 
-node calendar-icon-api.js
+.logo{
+  width: 50px;
+  height: 50px;
+  /* border-radius: 50%;
+  box-shadow: 0 0 10px rgba(244, 47, 47, 0.447); */
 
 
+}
 
 /* Index page  */
 /* Index page  */
@@ -426,10 +431,14 @@ height: 20px; */
 /* Community Page Styling */
 
 
+#Community-background-image {
+  background-image: url(../images2/home3.png);
+}
+
 .flexContainer {
   display: flex;
   flex-wrap: wrap;
-  margin: 10px;
+  padding: 20px;
 }
 
 .flexContainer2 {
@@ -441,6 +450,8 @@ height: 20px; */
   font-family: Arial, Helvetica, sans-serif;
   border: 1px solid #ADAAAA;
 }
+
+
 
 .title {
   margin: auto;
@@ -466,7 +477,11 @@ height: 20px; */
   text-align: left;
 }
 
-#addPost{
+#search .live-search-field{
+  font-size: 16px;
+}
+
+#addPost {
   width: 50px;
   height: 50px;
   margin: auto;
@@ -506,8 +521,28 @@ height: 20px; */
   border: 1px solid;
   margin: auto auto auto auto;
   background-color: rgba(255, 255, 255, 0.6);
+  /* background-image: url(../images2/home3.png);
+  background-size: cover;
+  background-repeat: no-repeat; */
+
   padding: 10px;
-  background-color: rgba(58, 115, 46, 0.121);
+  background-color: rgba(255, 255, 255, 0.563);
+
+}
+
+.overlay {
+  background-image: url(../images2/home3.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+
+}
+
+.overlay2 {
+  background-image: url(../images2/home3.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
 
 }
 
@@ -516,7 +551,7 @@ height: 20px; */
   text-align: left;
   border-radius: revert;
   margin: 20px;
-  
+
 }
 
 #post_container a {
@@ -529,7 +564,6 @@ height: 20px; */
   /* text-align: left; */
   font-weight: 100;
   margin-left: 10px
-
 }
 
 #post_username {
@@ -552,6 +586,13 @@ height: 20px; */
   text-align: left;
 }
 
+#add-post-title{
+  color: #000000;
+}
+
+/* #new-post{
+  align: right;
+} */
 
 
 /* Community/Post Page Styling */
@@ -561,12 +602,17 @@ height: 20px; */
 
 #individual_post_container {
   width: 90%;
+  height: 50%;
   border: 1px solid;
-
+  padding: 30px;
   margin-bottom: 7%;
-  background-color: rgba(58, 115, 46, 0.121);
-  ;
+  background-color: rgba(255, 255, 255, 0.563);
+
 }
+
+/* #individual_post_container{
+  height: 100%;
+} */
 
 #individual_post_title {
   text-align: left;
@@ -588,7 +634,7 @@ height: 20px; */
 /* Calendar Page Styling */
 /* Calendar Page Styling */
 
-#calendar_container{
+#calendar_container {
   padding: 20px;
 }
 
@@ -779,7 +825,7 @@ height: 20px; */
   margin: 20px;
   color: var(--primary-clr);
   margin-left: 25%;
-  
+
 }
 
 .calendar .goto-today .goto {
@@ -819,7 +865,7 @@ height: 20px; */
   padding: 10px;
   border: 2px solid rgb(58 115 46 / 45%);
   background-color: rgb(58 115 46 / 20%);
-  
+
 
   /* padding: 5px; */
 
@@ -828,10 +874,10 @@ height: 20px; */
 .calendar .goto-today button:hover {
   /* color: #fff; */
   color: #000000;
-  box-shadow: 0 0 4px  rgb(56, 77, 48);
+  box-shadow: 0 0 4px rgb(56, 77, 48);
   text-decoration: rgba(244, 47, 47, 0.447) underline 2px;
   text-underline-offset: 0.4em;
-  
+
   /* background-color: var(--primary-clr); */
 }
 
@@ -841,7 +887,7 @@ height: 20px; */
   border-radius: 5px;
 }
 
-.right{
+.right {
   border: #b0b0b0 1px solid;
   box-shadow: 0 0 8px rgb(56, 77, 48);
   border-radius: 10%;
@@ -884,7 +930,7 @@ height: 20px; */
 .right .today-date .event-date {
   font-size: 1rem;
   font-weight: 400;
-  color: #878895;
+  color: #000000;
 }
 
 .events {
@@ -895,21 +941,21 @@ height: 20px; */
   overflow-y: auto;
   display: flex;
   flex-direction: column;
-  padding-left: 4px;
+  /* padding-left: 4px; */
 }
 
 .events .event {
   position: relative;
-  width: 95%;
+  /* width: 95%; */
   min-height: 70px;
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   flex-direction: column;
   gap: 5px;
   padding: 0 20px;
   padding-left: 50px;
   color: #fff;
-  background: linear-gradient(90deg, #3f4458, transparent);
+  background: rgba(244, 47, 47, 0.447);
   cursor: pointer;
 }
 
@@ -919,17 +965,21 @@ height: 20px; */
 }
 
 .events .event:hover {
-  background: linear-gradient(90deg, var(--primary-clr), transparent);
+  /* background: linear-gradient(90deg, var(--primary-clr), transparent); */
+  border: rgba(244, 47, 47, 0.447);
+
 }
 
 .events .event .title {
   display: flex;
   align-items: center;
   pointer-events: none;
+  color: black;
 }
 
 .events .event .title .event-title {
-  font-size: 1rem;
+  padding: 10px;
+  /* font-size: 1rem; */
   font-weight: 400;
   margin-left: 20px;
 }
@@ -946,7 +996,7 @@ height: 20px; */
 .events .event .event-time {
   font-size: 0.8rem;
   font-weight: 400;
-  color: #878895;
+  color: #000000;
   margin-left: 15px;
   pointer-events: none;
 }
@@ -987,11 +1037,11 @@ height: 20px; */
   align-items: center;
   justify-content: center;
   font-size: 1rem;
-  color: #878895;
-  border: 2px solid #878895;
+  color: #506e53;
+  border: 2px solid #506e53;
   opacity: 0.5;
   border-radius: 50%;
-  
+
   background-color: transparent;
   cursor: pointer;
 }
@@ -1073,6 +1123,7 @@ height: 20px; */
 .add-event-header .close:hover {
   color: var(--primary-clr);
   
+
 }
 
 .add-event-header .title {
@@ -1471,7 +1522,7 @@ height: 20px; */
   flex: 2;
 
 
-  
+
 
   /* padding: 5px; */
 
@@ -1480,10 +1531,10 @@ height: 20px; */
 .calendarWiget .goto-todayWiget button:hover {
   /* color: #fff; */
   color: #000000;
-  box-shadow: 0 0 4px  rgb(56, 77, 48);
+  box-shadow: 0 0 4px rgb(56, 77, 48);
   text-decoration: rgba(244, 47, 47, 0.447) underline 2px;
   text-underline-offset: 0.4em;
-  
+
   /* background-color: var(--primary-clr); */
 }
 
