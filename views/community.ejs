@@ -2,10 +2,25 @@
   <!-- header included end -->
   <%- include('includes/flash')%>
 
+<style>
+  .flexContainer-searchBar {
+  display: flex;
+  flex-wrap: wrap;
+  flex:2;
+  }
+
+  .flex-collum {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+
+</style>
+
 
     <body>
-      <div class="Community-background-image">
-        <div class="overlay">
+        <div class="overlay2">
 
           <main>
             <article class="flexContainer">
@@ -22,17 +37,34 @@
 
               <% if (posts.length) { %>
 
-                <article class="flexContainer">
+                <article >
+                  <div class="flexContainer-searchBar">
+                    <a id="addPost" class="btn btn-success mr-2" href="/create-post">+
+                    </a>
+                    <p id="search" class="text-center mb-4"><i class="fas fa-search"></i> 
+                      <!-- <label for="live-search-field"><i class="fas fa-search"></i></label> -->
+                      <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+                      <input type="text" id="live-search-field" class="live-search-field" placeholder="Search Topic Person or Post">
+                      <a id="search-small" href="#" class="text-white mr-2 header-search-icon" title="Search"
+                        data-toggle="tooltip" data-placement="bottom"></a>
+                    </p>
+                  </div>
 
-                  <a id="addPost" class="btn btn-success mr-2"       href="/create-post">+
-                  </a>
+                    <div class="flex-collum">
+                      <div class="">
+                        <div class="container container--narrow">   
+                        </div>
+                      </div>
+                  
+                      <div class="search-overlay-bottom">
+                        <div class="container container--narrow py-3">
+                          <div class="circle-loader"></div>
+                          <div class="live-search-results"></div>
+                        </div>
+                      </div>
+                    </div>
+              
 
-                  <p id="search" class="text-center mb-4"><i class="fas fa-search"></i> Search for
-                    questions, people
-                    and topics
-                    <a id="search-small" href="#" class="text-white mr-2 header-search-icon" title="Search"
-                      data-toggle="tooltip" data-placement="bottom"></a>
-                  </p>
                 </article>
 
 
@@ -93,9 +125,8 @@
 
 
           </main>
-        </div>
       </div>
     </body>
 
     <!-- footer begins -->
-    <%- include('includes/footer') %>
+    <%- include('includes/footer') %>

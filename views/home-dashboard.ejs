@@ -1,11 +1,10 @@
 <%- include('includes/header') %>
   <!-- header included end -->
-
   <%- include('includes/flash')%>
-
     <section class="gridcontainer">
 
         <div>
+          <img class="logo" src="images2/logo.png" alt="Floc logo">
           <img class="menu_icon item" src="/images/menu_icon.png">
         </div>
 
@@ -72,7 +71,7 @@
 
         </div>
 
-        <script defer src="/weather/app.js"></script>
+        <script defer src="weather/app.js"></script>
 
 
 
@@ -86,7 +85,7 @@
           </a>
         </div>
         <!-- Insert Calendar Widget Script here -->
-      <!----  <script src="/calendar/fullscript.js"></script> -->
+        <script src="/calendar/fullscript.js"></script>
         <!-- <script src="/caledar/script2.js"></script> -->
 
 
@@ -98,26 +97,14 @@
           </a>
         </div>
         <!-- Insert Emercency Services  Widget Script here -->
-        <script type ="module" async defer src = "/emergency/emergency.js"></script>
-
-
-
-
         <div class="forum_widget item6">
-
           <%- include('./forum') %>
         </div>
-
-
-
         <div class="attractions_widget item7">
           <a id="link" href="/attraction.html">
             Attractions
-            <div class = "places">
-      
-            </div>
             <!-- Insert Attractions Widget here -->
-            <script async defer src ="/attractions/attractions.js"></script>
+
           </a>
         </div>
         <!-- Insert Attractions Widget Script here -->
@@ -125,3 +112,4 @@
 
 
     <!-- footer begins -->
+    <%- include('includes/footer') %>
