@@ -1,0 +1,149 @@
+<%- include('includes/header') %>
+  <!-- header included end -->
+  <%- include('includes/flash')%>
+    <section class="gridcontainer">
+
+      <div>
+        <img class="logo" src="images2/logo.png" alt="Floc logo">
+        <img class="menu_icon item" src="/images/menu_icon.png">
+      </div>
+
+      <div class="profile_widget item1">
+        <a id="link" href="profile.ejs">
+
+          <div class="profile--widget">
+            <a href="/profile/<%= user.username %>" class="mr-2">
+              <img class="avatar-large" title="<%= user.username %>" data-toggle="tooltip" data-placement="bottom"
+                style=" border-radius: 50px;" src="<%= user.avatar %>"></a>
+
+            <div class="flex--box d-flex justify-content-center">
+              <a href="/profile/<%= user.username %>" id="name" class="mr-2 text-center"
+                style="z-index: 10; font-size: 1.4rem; text-decoration: none; color: black;">
+                <%= user.username %>
+              </a>
+              <!-- <span class="header-chat-icon" title="Chat" data-toggle="tooltip" data-placement="bottom"><i class="fas fa-comment" style="font-size: .9rem; color: black;"></i></span>   -->
+            </div>
+            <div class="profile--widget--bottom">
+              <!-- Gravatar API SRC= -->
+              <a class="btn btn-success mr-2"
+                style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                href="/create-post">Create Post</a>
+              <!-- Session logout ACTION=/LOGOUT -->
+              <form action="/logout" method="POST" class="d-inline">
+                <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+                <button class="btn btn-secondary"
+                  style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Sign
+                  Out</button>
+              </form>
+            </div>
+
+          </div>
+        </a>
+      </div>
+
+      <div id="map" class="maps_widget item2"></div>
+
+      <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwaZh4LZ9pza24U9ewbCdiLvIh27etaCI&callback=initMap">
+        </script>
+
+      <div class="weather_widget item3">
+        <a id="link" href="weather.html">
+
+          <!-- <div class="app-title"> -->
+          <div class="location">
+            <p>-</p>
+          </div>
+          <!-- </div> -->
+          <div class="notification"> </div>
+          <div class="weather-container">
+            <div class="weather-icon">
+              <img src="weather/icons/unknown.png" alt="">
+            </div>
+            <div class="temperature-value">
+              <p>- °<span>C</span></p>
+            </div>
+            <div class="temperature-description">
+              <p> - </p>
+            </div>
+          </div>
+        </a>
+
+      </div>
+
+      <script defer src="weather/app.js"></script>
+
+
+
+
+      <div class="calendar_widget item4">
+        <a id="link" href="/calendar.html">
+          <div class="dateTime"></div>
+
+          <!-- Insert Date here -->
+          <script async defer src="/calendar/timeDate.js"></script>
+
+
+        </a>
+      </div>
+      <!-- Insert Calendar Widget Script here -->
+      <script src="/calendar/fullscript.js"></script>
+      <!-- <script src="/caledar/script2.js"></script> -->
+
+
+      <div class="emercency_services_widget item5">
+
+        Current Location
+        <!-- Insert Emercency Services  Widget here -->
+        <div class="houseNumber">
+        </div>
+        <div class="street">
+        </div>
+        <div class="district">
+        </div>
+        <div class="suburb">
+        </div>
+        <div class="city">
+        </div>
+        <div class="state">
+        </div>
+        <div class="postcode">
+        </div>
+        <!-- Insert Emercency Services  Widget here -->
+        <script async defer src="/location/location.js"></script>
+
+      </div>
+      <!-- Insert Emercency Services  Widget Script here -->
+      <div class="forum_widget item6">
+        <%- include('./forum') %>
+      </div>
+      <div class="attractions_widget item7">
+        <a id="link" href="/attraction.html">
+          Attractions
+          <!-- Insert Attractions Widget here -->
+          <div class="attractions">
+            <div class="attraction1">
+              <p></p>
+            </div>
+            <div class="attraction2">
+              <p></p>
+            </div>
+            <div class="attraction3">
+              <p></p>
+            </div>
+            <div class="attraction4">
+              <p></p>
+            </div>
+            <div class="attraction5">
+              <p></p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <!-- Insert Attractions Widget Script here -->
+      <script async defer src="/attractions/attractions.js"></script>
+    </section>
+
+
+    <!-- footer begins -->
+    <%- include('includes/footer') %>
