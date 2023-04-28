@@ -1,3 +1,4 @@
+console.log("test 1");
 // CHECK IF BROWSER SUPPORTS GEOLOCATION
 if('geolocation' in navigator){
   navigator.geolocation.getCurrentPosition(setPosition, showError);
@@ -33,6 +34,7 @@ function setPosition(position){
 
   getMainAttractions(latitude, longitude);
 }
+
 function getMainAttractions(latitude,longitude){
   
     const apiKey = `5ae2e3f221c38a28845f05b6e0fd8459aa247818bb4d27e011639812`
