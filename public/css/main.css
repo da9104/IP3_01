@@ -206,8 +206,9 @@ h1 {
 
 /* Title Styles */
 .form_title {
-  margin: 2rem 2rem 0 0;
+  margin: 2rem 2rem 0.3rem 0;
   text-align: center;
+  font-size: 40px;
   width: 100%;
 }
 
@@ -345,7 +346,7 @@ label {
 
 .form_text {
   text-align: center;
-  font-size: 0.6vw;
+  font-size: 1rem;
 }
 
 /* Map */
