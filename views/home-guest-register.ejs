@@ -58,7 +58,7 @@
         </figure>
 
 
-        <div class="forum">
+        <div class="forum" id="landing-forum">
           <!-- Register form start ACTION=/register -->
           <form action="/register" method="POST" id="registration-form">
 
@@ -90,7 +90,7 @@
                     placeholder="Password" autofocus required>
                 </div>
                 <input type="hidden" name="_csrf" value="<%= csrfToken %>">
-                <button type="submit" class="py-3 mt-4 btn btn-lg btn-success btn-block">Register</button>
+                <button type="submit" class="py-3 mt-4 btn btn-lg btn-success btn-block" id="landing-button">Register</button>
 
 
             <p class="form_text">Already have an account?  <a href='/signin'> Log in    </a> 

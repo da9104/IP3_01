@@ -3,7 +3,6 @@
   padding: 0px;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
-
 }
 
 body {
@@ -23,13 +22,11 @@ h1 {
   text-decoration: none;
 }
 
-.logo{
+.logo {
   width: 50px;
   height: 50px;
   /* border-radius: 50%;
   box-shadow: 0 0 10px rgba(244, 47, 47, 0.447); */
-
-
 }
 
 /* Index page  */
@@ -42,8 +39,7 @@ h1 {
   height: 100vh;
   position: absolute;
   z-index: 1;
-  font: 20px 'Quicksand', "Calibri";
-
+  font: 20px "Quicksand", "Calibri";
 }
 
 .slider form {
@@ -69,6 +65,10 @@ h1 {
   width: 500%;
   margin: 0;
   animation: animate 60s infinite;
+}
+
+.slide {
+  background-size: fit;
 }
 
 .slide h1 {
@@ -162,8 +162,7 @@ h1 {
 }
 
 .forum {
-  font: 20px 'Quicksand', "Calibri";
-  width: 400px;
+  font: 20px "Quicksand", "Calibri";
   max-width: 400px;
   margin: 4rem;
   padding: 2rem;
@@ -177,20 +176,31 @@ h1 {
   margin-top: 140px;
 }
 
+#landing-forum {
+  font: 20px "Quicksand", Calibri;
+  margin: 15% 0 0 70%;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgb(71, 71, 71);
+  background: #f5f5f5;
+  position: absolute;
+  z-index: 2;
+}
+
 .form_input,
 .form_button {
-  font: 'Quicksand', "Calibri";
+  font: "Quicksand", "Calibri";
+  object-position: center;
 }
 
 .form-hidden {
   display: none;
 }
 
-.form>*:first-child {
+.form > *:first-child {
   margin-top: 0;
 }
 
-.form>*:last-child {
+.form > *:last-child {
   margin-bottom: 0;
 }
 
@@ -223,6 +233,12 @@ h1 {
   font-size: 19px;
 }
 
+.form-group {
+  justify-content: center;
+}
+
+/* Footer styling  */
+
 /* Label Styles */
 label {
   margin-right: 10px;
@@ -241,7 +257,6 @@ label {
   outline: none;
   background: #ffffff;
   transition: background 0.2s, border-color 0.2s;
-  margin-right: 20px;
 }
 
 /* Drop Down Select Box Styles */
@@ -272,11 +287,11 @@ label {
 }
 
 /* Main Button Styles */
-.form_button {
-  width: 236px;
-  margin: 10px;
+.form_button,
+.btn-block {
+  justify-content: center;
+  width: 100%;
   padding: 1rem 1rem;
-  margin-left: 6rem;
   color: #ffffff;
   font-size: 18px;
   border: none;
@@ -284,6 +299,7 @@ label {
   outline: none;
   cursor: pointer;
   background: #68a66f;
+  margin-bottom: 10px;
 }
 
 /* Button Interactivity */
@@ -329,7 +345,7 @@ label {
 
 .form_text {
   text-align: center;
-  font-size: 18px;
+  font-size: 0.6vw;
 }
 
 /* Map */
@@ -340,11 +356,9 @@ label {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-
 /* Weather */
 /* Weather */
 /* Weather */
-
 
 .notification {
   display: none;
@@ -370,7 +384,6 @@ p.weather-city {
   margin: 0;
   padding: 0;
 }
-
 
 /* weather icon size */
 /* weather icon size */
@@ -408,7 +421,6 @@ height: 20px; */
   text-align: center;
   cursor: pointer;
   font-family: Arial, Helvetica, sans-serif;
-
 }
 
 .temperature-value span {
@@ -424,12 +436,9 @@ height: 20px; */
   font-size: 20px;
 }
 
-
-
 /* Community Page Styling */
 /* Community Page Styling */
 /* Community Page Styling */
-
 
 #Community-background-image {
   background-image: url(../images2/home3.png);
@@ -448,20 +457,17 @@ height: 20px; */
   /* margin-left: 10rem; */
   /* how do i centre this */
   font-family: Arial, Helvetica, sans-serif;
-  border: 1px solid #ADAAAA;
+  border: 1px solid #adaaaa;
 }
-
-
 
 .title {
   margin: auto;
   font-weight: bold;
-
 }
 
 #search {
   text-align: left;
-  color: #ADAAAA;
+  color: #adaaaa;
   /* font-size: 18px; */
   font-weight: 100;
   background-color: #ffffff;
@@ -469,15 +475,13 @@ height: 20px; */
   margin: 1rem;
   flex: 2;
   border: 1px solid grey;
-
-
 }
 
 #search i {
   text-align: left;
 }
 
-#search .live-search-field{
+#search .live-search-field {
   font-size: 16px;
 }
 
@@ -507,14 +511,12 @@ height: 20px; */
   padding: 1px;
   background-color: rgba(244, 47, 47, 0.447);
   box-shadow: 0 0 8px rgb(56, 77, 48);
-
 }
 
 #addPost:active {
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
-
 
 #container {
   width: 90%;
@@ -527,7 +529,6 @@ height: 20px; */
 
   padding: 10px;
   background-color: rgba(255, 255, 255, 0.563);
-
 }
 
 .overlay {
@@ -535,7 +536,6 @@ height: 20px; */
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
-
 }
 
 .overlay2 {
@@ -543,7 +543,6 @@ height: 20px; */
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
-
 }
 
 #post_container {
@@ -551,7 +550,6 @@ height: 20px; */
   text-align: left;
   border-radius: revert;
   margin: 20px;
-
 }
 
 #post_container a {
@@ -563,7 +561,7 @@ height: 20px; */
   font-size: 18px;
   /* text-align: left; */
   font-weight: 100;
-  margin-left: 10px
+  margin-left: 10px;
 }
 
 #post_username {
@@ -573,7 +571,7 @@ height: 20px; */
 
 #post_date {
   font-size: 16px;
-  color: #ADAAAA;
+  color: #adaaaa;
 }
 
 #post_content {
@@ -586,7 +584,7 @@ height: 20px; */
   text-align: left;
 }
 
-#add-post-title{
+#add-post-title {
   color: #000000;
 }
 
@@ -594,11 +592,9 @@ height: 20px; */
   align: right;
 } */
 
-
 /* Community/Post Page Styling */
 /* Community/Post Page Styling */
 /* Community/Post Page Styling */
-
 
 #individual_post_container {
   width: 90%;
@@ -607,7 +603,6 @@ height: 20px; */
   padding: 30px;
   margin-bottom: 7%;
   background-color: rgba(255, 255, 255, 0.563);
-
 }
 
 /* #individual_post_container{
@@ -628,8 +623,6 @@ height: 20px; */
   padding: 10px;
 }
 
-
-
 /* Calendar Page Styling */
 /* Calendar Page Styling */
 /* Calendar Page Styling */
@@ -642,7 +635,6 @@ height: 20px; */
   /* width: 70%; */
   /* height: 50%; */
   /* padding: 20px; */
-
 }
 
 .calendar {
@@ -660,7 +652,6 @@ height: 20px; */
   border-radius: 12%;
   background-color: #ffffff;
   /* border: px solid #000000; */
-
 }
 
 .calendar .month {
@@ -752,7 +743,6 @@ height: 20px; */
   text-underline-offset: 1em;
   background-color: var(--primary-clr);
   /* background-color: rgba(58, 115, 46, 0.121); */
-
 }
 
 .calendar .days .prev-date,
@@ -801,7 +791,6 @@ height: 20px; */
 
 .calendar .days .day:hover.event::after {
   background-color: #fff;
-
 }
 
 .calendar .days .active.event::after {
@@ -825,7 +814,6 @@ height: 20px; */
   margin: 20px;
   color: var(--primary-clr);
   margin-left: 25%;
-
 }
 
 .calendar .goto-today .goto {
@@ -866,9 +854,7 @@ height: 20px; */
   border: 2px solid rgb(58 115 46 / 45%);
   background-color: rgb(58 115 46 / 20%);
 
-
   /* padding: 5px; */
-
 }
 
 .calendar .goto-today button:hover {
@@ -894,8 +880,6 @@ height: 20px; */
   background-color: #ffffff;
   margin: 0 0 0 40px;
   flex: 2;
-
-
 }
 
 .container .right {
@@ -919,7 +903,6 @@ height: 20px; */
   margin-bottom: 20px;
   text-transform: capitalize;
   background-color: #629c698a;
-
 }
 
 .right .today-date .event-day {
@@ -967,7 +950,6 @@ height: 20px; */
 .events .event:hover {
   /* background: linear-gradient(90deg, var(--primary-clr), transparent); */
   border: rgba(244, 47, 47, 0.447);
-
 }
 
 .events .event .title {
@@ -1053,7 +1035,6 @@ height: 20px; */
   padding: 1px;
   background-color: rgba(244, 47, 47, 0.447);
   box-shadow: 0 0 8px rgb(56, 77, 48);
-
 }
 
 .add-event:hover {
@@ -1122,8 +1103,6 @@ height: 20px; */
 
 .add-event-header .close:hover {
   color: var(--primary-clr);
-  
-
 }
 
 .add-event-header .title {
@@ -1247,6 +1226,9 @@ height: 20px; */
   .add-event-wrapper {
     bottom: 100px;
   }
+
+  #landing-forum {
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -1295,7 +1277,6 @@ height: 20px; */
   text-decoration: underline;
 }
 
-
 /* Calendar Widget  */
 /* Calendar Widget  */
 /* Calendar Widget  */
@@ -1315,7 +1296,6 @@ height: 20px; */
   border-radius: 12%;
   /* background-color: #ffffff; */
   /* border: px solid #000000; */
-
 }
 
 .calendarWiget .monthWiget {
@@ -1330,7 +1310,6 @@ height: 20px; */
   font-weight: bold;
   text-transform: capitalize;
 }
-
 
 .calendarWiget .weekdaysWiget {
   width: 100%;
@@ -1402,7 +1381,6 @@ height: 20px; */
   text-decoration: rgba(244, 47, 47, 0.447) underline 2px;
   text-underline-offset: 1em;
   background-color: var(--primary-clr);
-
 }
 
 .calendarWiget .daysWiget .prev-date,
@@ -1451,7 +1429,6 @@ height: 20px; */
 
 .calendarWiget .daysWiget .dayWiget:hover.event::after {
   background-color: #fff;
-
 }
 
 .calendarWiget .daysWiget .active.eventWiget::after {
@@ -1462,8 +1439,6 @@ height: 20px; */
 .calendarWiget .daysWiget .active.eventWiget {
   padding-bottom: 10px;
 }
-
-
 
 .calendarWiget .goto-todayWiget {
   /* width: 50%; */
@@ -1493,7 +1468,6 @@ height: 20px; */
   /* text-underline-offset: 0.3em; */
   background-color: rgb(58 115 46 / 20%);
   width: 65%;
-
 }
 
 .calendarWiget .goto-todayWiget .gotoWiget input {
@@ -1504,7 +1478,6 @@ height: 20px; */
   border-radius: 5px;
   padding: 0 20px;
   color: var(--primary-clr);
-
 }
 
 .calendarWiget .goto-todayWiget button {
@@ -1521,11 +1494,7 @@ height: 20px; */
   width: 10%;
   flex: 2;
 
-
-
-
   /* padding: 5px; */
-
 }
 
 .calendarWiget .goto-todayWiget button:hover {
