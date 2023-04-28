@@ -4,9 +4,12 @@
     <section class="gridcontainer">
 
       <div>
-        <img class="logo" src="images2/logo.png" alt="Floc logo">
-        <img class="menu_icon item" src="/images/menu_icon.png">
+        <a href="/">
+          <img class="logo" src="images2/logo.png" alt="Floc logo">
+        </a>
+        <img class="menu_icon_home" src="/images/menu_icon.png">
       </div>
+
 
       <div class="profile_widget item1">
         <a id="link" href="profile.ejs">
@@ -93,22 +96,31 @@
 
       <div class="emercency_services_widget item5">
 
-        Current Location
+        <p id="location">Current Location</p>
+        
         <!-- Insert Emercency Services  Widget here -->
-        <div class="houseNumber">
-        </div>
-        <div class="street">
-        </div>
-        <div class="district">
-        </div>
-        <div class="suburb">
-        </div>
-        <div class="city">
-        </div>
-        <div class="state">
-        </div>
-        <div class="postcode">
-        </div>
+        <article class="locationContainr">
+
+        <article class="flexContainerLocation">
+          <div id="1" class="houseNumber"></div>
+          <div id="2" class="street"></div>
+          <div id="3" class="district"></div>
+
+        </article>
+          
+        <article class="flexContainerLocation">
+       
+          <div id="4" class="suburb"></div>
+          <div id="5" class="city"></div>
+          <div id="6" class="state"></div>
+        <div id="7" class="postcode"></div>
+
+        </article>
+
+    
+        </article>
+       
+       
         <!-- Insert Emercency Services  Widget here -->
         <script async defer src="/location/location.js"></script>
 

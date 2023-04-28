@@ -29,14 +29,13 @@
     /* font-weight: bolder;    changes the text of the whole application  */
     margin: 10px;
     /*   margin: 10px;  */
-    font-size: 20px;
-
-
+    /* font-size: 20px; */
 }
 
-.menu_icon {
-    margin: 20px;
-}
+
+  /* .dateTime:hover{
+    color: rgb(56, 77, 48);
+  } */
 
 .profile_widget {
     /* border: 3px solid #46593f; */
