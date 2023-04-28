@@ -51,26 +51,25 @@
         </script>
 
       <div class="weather_widget item3">
-        <a id="link" href="weather.html">
 
-          <!-- <div class="app-title"> -->
-          <div class="location">
-            <p>-</p>
+        <!-- <div class="app-title"> -->
+        <div class="location">
+          <p>-</p>
+        </div>
+        <!-- </div> -->
+        <div class="notification"> </div>
+        <div class="weather-container">
+          <div class="weather-icon">
+            <img src="weather/icons/unknown.png" alt="">
           </div>
-          <!-- </div> -->
-          <div class="notification"> </div>
-          <div class="weather-container">
-            <div class="weather-icon">
-              <img src="weather/icons/unknown.png" alt="">
-            </div>
-            <div class="temperature-value">
-              <p>- °<span>C</span></p>
-            </div>
-            <div class="temperature-description">
-              <p> - </p>
-            </div>
+          <div class="temperature-value">
+            <p>- °<span>C</span></p>
           </div>
-        </a>
+          <div class="temperature-description">
+            <p> - </p>
+          </div>
+        </div>
+
 
       </div>
 
@@ -84,48 +83,65 @@
           <div class="dateTime"></div>
 
           <!-- Insert Date here -->
-          <script async defer src="/calendar/timeDate.js"></script>
-
+          <script async src="/calendar/timeDate.js"></script>
 
         </a>
       </div>
       <!-- Insert Calendar Widget Script here -->
-      <script src="/calendar/fullscript.js"></script>
       <!-- <script src="/caledar/script2.js"></script> -->
-
 
       <div class="emercency_services_widget item5">
 
         <p id="location">Current Location</p>
-        
-        <!-- Insert Emercency Services  Widget here -->
+
+
+        <!-- Insert Emercency Services  Widget here -->
+
         <article class="locationContainr">
 
-        <article class="flexContainerLocation">
-          <div id="1" class="houseNumber"></div>
-          <div id="2" class="street"></div>
-          <div id="3" class="district"></div>
+
+
+
+          <article class="flexContainerLocation">
+
+            <div id="1" class="houseNumber"></div>
+
+            <div id="2" class="street"></div>
+
+            <div id="3" class="district"></div>
+
+
+
+          </article>
+
+
+
+
+          <article class="flexContainerLocation">
+
+
+
+
+            <div id="4" class="suburb"></div>
+
+            <div id="5" class="city"></div>
+
+            <div id="6" class="state"></div>
+
+            <div id="7" class="postcode"></div>
+
+
+          </article>
+
 
         </article>
-          
-        <article class="flexContainerLocation">
-       
-          <div id="4" class="suburb"></div>
-          <div id="5" class="city"></div>
-          <div id="6" class="state"></div>
-        <div id="7" class="postcode"></div>
 
-        </article>
 
-    
-        </article>
-       
-       
-        <!-- Insert Emercency Services  Widget here -->
-        <script async defer src="/location/location.js"></script>
+        <!-- Insert Location Widget here -->
+        <script async src="/location/location.js"></script>
 
       </div>
-      <!-- Insert Emercency Services  Widget Script here -->
+
       <div class="forum_widget item6">
         <%- include('./forum') %>
       </div>
@@ -153,7 +169,7 @@
         </a>
       </div>
       <!-- Insert Attractions Widget Script here -->
-      <script async defer src="/attractions/attractions.js"></script>
+      <script async src="/attractions/dashboardAttractions.js"></script>
     </section>
 
 
