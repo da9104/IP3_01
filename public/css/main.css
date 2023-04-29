@@ -30,13 +30,17 @@ h1 {
 
 }
 
+/* .menu_bar_headings{
+  align-items: left;
+} */
+
 .dateTime{
   padding: 2.2rem;
   font-size: 3rem;
 }
 
 .dateTime:hover{
-  color: rgb(56, 77, 48);
+  color: rgba(244, 47, 47, 0.447);
 }
 
 #location{
@@ -44,17 +48,96 @@ h1 {
   font-weight: bold;
 }
 
-
-
-
 .logo{
   width: 50px;
   height: 50px;
   /* border-radius: 50%;
   box-shadow: 0 0 10px rgba(244, 47, 47, 0.447); */
+}
 
+.logo2{
+  width: 0px;
+  height: 0px;
+}
+
+.attractions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+ .attractionTitle {
+  font-weight: bold;
+  font-size: 20px;
+  margin: 10px 0px 30px 0px;
+  text-align: center;
+  background-color: #629c698a;
+  padding: 10px;
 
 }
+.attractions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 10px;
+  text-align: center;
+  /* background-color: #629c698a; */
+  padding: 10px;
+}
+
+.attraction1,
+.attraction2,
+.attraction3,
+.attraction4,
+.attraction5 {
+  margin: 20px;
+  flex-basis: 30%;
+  border: 2px solid #629c69;
+  padding: 40px;
+  /* gap: 10px; */
+  background-color: #629c698a;
+}
+
+.attraction1:hover,
+.attraction2:hover,
+.attraction3:hover,
+.attraction4:hover,
+.attraction5:hover{
+  border: 2px solid rgba(244, 47, 47, 0.593);
+  background-color: rgba(244, 47, 47, 0.263);
+
+}
+
+
+.att1Name,
+.att2Name,
+.att3Name,
+.att4Name,
+.att5Name {
+  font-weight: bold;
+}
+
+.att1Dist,
+.att2Dist,
+.att3Dist,
+.att4Dist,
+.att5Dist {
+  font-style: italic;
+}
+
+.att1Rate,
+.att2Rate,
+.att3Rate,
+.att4Rate,
+.att5Rate {
+  color: rgba(244, 47, 47, 0.447);
+  font-weight: bold;
+}
+
+
 
 /* Index page  */
 /* Index page  */
@@ -232,7 +315,7 @@ h1 {
 }
 
 .form_message--success {
-  color: #4bb544;
+  color: #4c9247;
 }
 
 .form_message--error {
