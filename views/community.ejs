@@ -14,8 +14,218 @@
         flex-direction: column;
         flex-wrap: wrap;
       }
+
+      @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+
+    .b-example-divider {
+      height: 3rem;
+      background-color: rgba(0, 0, 0, .1);
+      border: solid rgba(0, 0, 0, .15);
+      border-width: 1px 0;
+      box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+    }
+
+    .b-example-vr {
+      flex-shrink: 0;
+      width: 1.5rem;
+      height: 100vh;
+    }
+
+    .bi {
+      vertical-align: -.125em;
+      fill: currentColor;
+    }
+
+    .nav-scroller {
+      position: relative;
+      z-index: 2;
+      /* height: 2.75rem; */
+      overflow-y: hidden;
+    }
+
+    .bg-transparent {
+      background-color: transparent;
+    }
+
+    .nav-scroller .nav {
+      display: flex;
+      flex-wrap: nowrap;
+      /* padding-bottom: 1rem; */
+      /* margin-top: -1px; */
+      overflow-x: auto;
+      text-align: center;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+
+    }
+
+    #offcanvasEx {
+      margin-right: 0px;
+      margin-left: 0px;
+      margin-bottom: 0px;
+      margin-top: 0px;
+    }
+
+    #nav--header {
+      margin-right: 0px;
+      margin-left: 10px;
+      margin-bottom: 0px;
+      margin-top: 0px;
+    }
+
+    .offcanvas .offcanvas-start {
+      margin-right: 0px;
+      margin-left: 0px;
+      margin-bottom: 0px;
+      margin-top: 0px;
+    }
+
+    .offcanvas-body div li {
+      list-style-type: none;
+      text-align: left;
+
+      text-decoration: none;
+    }
+
+    .offcanvas-body div li a {
+      /* color: black; */
+      text-decoration: none;
+    }
+
+
+
+    #settings {
+      text-align: left;
+
+    }
+
+    #settingsButton {
+      padding: 0;
+      margin: 0;
+    }
+
+    .overlay4 {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 9999;
+      opacity: 0.5;
+    }
+
+    .red {
+      background-color: rgba(255, 0, 0, 0.5);
+    }
+
+    .yellow {
+      background-color: rgba(255, 255, 0, 0.5);
+    }
+
+    .blue {
+      background-color: rgba(0, 0, 255, 0.5);
+    }
+
+    .back-btn {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    background-color: #ddd;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
     </style>
 
+<!-- menu bar -->
+      <!--       
+      <div>
+        <a href="/">
+          <img class="logo" src="images2/logo.png" alt="Floc logo">
+        </a>
+        <img class="menu_icon_home" src="/images/menu_icon.png">
+      </div> -->
+
+      <nav class="autohide navbar navbar-expand-md fixed-top bg-transparent">
+        <div id="nav--header" style="display:flex; flex-direction: column; padding: 10px; margin-left: 0; left:0; ">
+          <a href="/">
+            <img class="logo" src="/images2/logo.png" alt="Floc logo" style="
+          margin-right: 0px;
+          margin-left: 18px;
+          margin-bottom: 0px;
+          margin-top: 0px;">
+          </a>
+          <div class="container-fluid" id="nav--header">
+            <a class="navbar-brand" data-bs-toggle="offcanvas" href="#offcanvasEx" role="button"
+              aria-controls="offcanvasExample" style="padding: 0; margin: 0;">
+              <img class="menu_icon_home" src="/images/menu_icon.png" style="padding: 25px 0; margin: 0;">
+              <!-- <i class="fas fa-bars" style="color: gray;" ></i> -->
+              <!-- <span class="navbar-toggler-icon"></span> -->
+            </a>
+          </div>
+
+      </nav>
+
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasEx" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <img src="/images2/logo.png" alt="FLOC Logo" class="logo offcanvas-title rounded-circle gap-0 mx-0"
+            id="offcanvasExampleLabel">
+          <!-- <h5 class="offcanvas-title" id="offcanvasExampleLabel">National Museums Scotland</h5> -->
+          <h6 class="fw-bold" style="font-size: .9rem;">
+            FLOC :: Your travel handbook.
+          </h6>
+          <button id="settingsButton" type="button" class="btn-close" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="menu_bar_headings">
+            <li><a href="/">Dashboard</a></li>
+            <li><a href="/profile/<%= user.username %>">Profile</a></li>
+            <li><a href="/calendar.html">Calandar</a></li>
+            <li><a href="/community">Community</a></li>
+            <li><a href="/attraction.html">Attractions</a></li>
+            <!-- <li><a href="/settings.html">Settings</a></li> -->
+
+            <div id="settings" class="dropdown mt-3">
+              <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+                style="border: 0;">
+                Accessibility Settings
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <li><a class="dropdown-item" href="#" onclick="showOverlay('red')">Red Overlay</a></li>
+                <li><a class="dropdown-item" href="#" onclick="showOverlay('yellow')">Yellow Overlay</a></li>
+                <li><a class="dropdown-item" href="#" onclick="showOverlay('blue')">Blue Overlay</a></li>
+              </ul>
+            </div>
+            <button class="back-btn" onclick="hideOverlay()">Back</button>
+
+            <script>
+              function showOverlay(color) {
+                var overlay4 = document.createElement('div');
+                overlay4.classList.add('overlay4', color);
+                document.body.appendChild(overlay4);
+              }
+
+              function hideOverlay() {
+                if (overlay) {
+                  document.body.removeChild(overlay);
+                  overlay = null;
+                }
+              }
+
+            </script>
+
+
+          </div>
+        </div>
+      </div>
+      <!-- menu bar -->
 
     <body>
       <div class="overlay2">
@@ -23,13 +233,13 @@
         <main>
           <article class="flexContainer">
             <a href="/">
-              <img class="logo" src="/images2/logo.png" alt="Floc logo">
+              <img height="0" width="0" class="logo2" src="//images2/logo.png" >
             </a>
             <div class="title">
               <h1 class="title">Community</h1>
             </div>
           </article>
-          <img class="menu_icon item" src="./images/menu_icon.png">
+          <img height="0" width="0" class="menu-icon" src="/images/menu_icon.png">
 
 
           <div id="container" class="dash-container">
