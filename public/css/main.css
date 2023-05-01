@@ -1600,7 +1600,7 @@ height: 20px; */
 
 /* media queries */
 
-@media screen and (max-width: 1200px) {
+@media screen and ( max-width: 1200px) {
   body {
     align-items: flex-start;
     justify-content: flex-start;
@@ -1663,6 +1663,21 @@ height: 20px; */
     bottom: 100px;
   }
 
+<<<<<<< HEAD
+=======
+  body {
+    background-color: #ceedc2;
+    background-image: url("./images2/1.jpg");
+  }
+
+  .slide {
+    display: none;
+  }
+  .forum {
+    margin: 10% 10% 10% 10%;
+  }
+
+>>>>>>> 29264cf4e63cc6483365c6cc4ceb497acb312efe
   .attraction4,
   .attraction5 {
     display: none;
