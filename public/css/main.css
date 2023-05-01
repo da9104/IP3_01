@@ -266,11 +266,8 @@ h1 {
 
 .forum {
   font: 20px "Quicksand", "Calibri";
-  max-width: 400px;
-  max-height: fit-content;
   padding: 2rem;
   box-shadow: 0 0 15px rgb(0, 0, 0);
-  float: right;
   border-radius: 50px;
   background: white;
   position: absolute;
@@ -1598,18 +1595,7 @@ height: 20px; */
 
 /* media queries */
 
-@media screen and (max-width: 480px) {
-  body {
-    background-color: lightblue;
-  }
-}
-
-@media screen and (max-width: 820px) {
-  body {
-  }
-}
-
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
   body {
     align-items: flex-start;
     justify-content: flex-start;
@@ -1654,6 +1640,23 @@ height: 20px; */
 
   .add-event-wrapper {
     bottom: 100px;
+  }
+
+  body {
+    background-color: #ceedc2;
+    background-image: url("./images2/1.jpg");
+  }
+
+  .slide {
+    display: none;
+  }
+  .forum {
+    margin: 10% 10% 10% 15%;
+  }
+
+  .attraction4,
+  .attraction5 {
+    display: none;
   }
 }
 
