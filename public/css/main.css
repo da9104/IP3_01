@@ -16,7 +16,7 @@ h1 {
 }
 
 .dateTime {
-  padding: 0.5rem;
+  padding: 2px;
   font-size: 2rem;
 }
 
@@ -90,6 +90,7 @@ h1 {
   /* border-radius: 15%; */
   padding: 20px;
   background-color: #629c698a;
+  margin: 10px;
 
 }
 
@@ -108,6 +109,7 @@ h1 {
 .att4Name,
 .att5Name {
   font-weight: bold;
+  font-size: 20px;
 }
 
 .att1Dist,
@@ -129,84 +131,8 @@ h1 {
 
 #atra{
   margin: 10px;
-}
-
-/* Attractions Widegt Styling */
-/* Attractions Widegt Styling */
-/* Attractions Widegt Styling */
-/* .attractionWidetContainer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
- font-weight: bold;
-   font-size: 20px;
-  margin-top: 10px;
   text-align: center;
-  padding: 10px;
 }
-
-.atWiget{
-  margin: 20px;
-  flex-basis: 30%;
-  border: 1px solid #629c69;
-  padding: 20px;
-  background-color: #629c698a;
-  font-style: italic;
-
-}
-
-.atWiget:hover {
-  border: 1px solid rgba(244, 47, 47, 0.593);
-  background-color: rgba(244, 47, 47, 0.263);
-}
-
-
-
-
-
-
-
-//////////////////////
-
-.attractions {
-  /* display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  font-weight: bold;
-  font-size: 20px;
-  margin-top: 10px;
-  text-align: center;
-  padding: 10px; 
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.attraction1,
-.attraction2,
-.attraction3,
-.attraction4,
-.attraction5 {
-  /* margin: 20px;
-  flex-basis: 30%;
-  border: 2px solid #629c69;
-  padding: 40px;
-  background-color: #629c698a; */
-  /* font-size: 15px; 
-
-  padding: 20px;
-  background-color: #629c698a;
-
-}
-
-.attraction1:hover,
-.attraction2:hover,
-.attraction3:hover,
-.attraction4:hover,
-.attraction5:hover {
-  border: 2px solid rgba(244, 47, 47, 0.593);
-  background-color: rgba(244, 47, 47, 0.263);
-} */
 
 
 
@@ -578,6 +504,7 @@ p.weather-city {
   color: #293251;
   text-align: center;
   font-size: 20px;
+  font-weight: bold;
 }
 
 .weather-icon {
@@ -674,7 +601,8 @@ height: 20px; */
 
 
 #location {
-  padding-top: 20px;
+  font-size: 20px;
+  padding-top: 10px;
   font-weight: bold;
 }
 

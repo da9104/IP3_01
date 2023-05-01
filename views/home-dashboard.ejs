@@ -250,7 +250,7 @@
 
             <div class="flex--box d-flex justify-content-center">
               <a href="/profile/<%= user.username %>" id="name" class="mr-2 text-center"
-                style="z-index: 10; font-size: 1.4rem; text-decoration: none; color: black;">
+                style="z-index: 10; font-weight: bold; font-size: 1.4rem; text-decoration: none; color: black;">
                 <%= user.username %>
               </a>
               <!-- <span class="header-chat-icon" title="Chat" data-toggle="tooltip" data-placement="bottom"><i class="fas fa-comment" style="font-size: .9rem; color: black;"></i></span>   -->
@@ -309,6 +309,8 @@
 
       <div class="calendar_widget item4">
         <a id="link" href="/calendar.html">
+        <p id="location">Calendar</p>
+
           <div class="dateTime"></div>
 
           <!-- Insert Date here -->
@@ -350,7 +352,7 @@
       </div>
       <div class="attractions_widget item7">
         <a id="link" href="/attraction.html">
-          Attractions
+          <p id="location">Attractions</p>
           <!-- Insert Attractions Widget here -->
           <div class="attractions">
             <div class="attraction1">
