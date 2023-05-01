@@ -24,10 +24,7 @@ h1 {
   color: rgba(244, 47, 47, 0.447);
 }
 
-#location {
-  padding-top: 5px;
-  font-weight: bold;
-}
+
 
 #logo {
   display: block;
@@ -628,7 +625,7 @@ height: 20px; */
 
 
 .locationContainr {
-  padding-left: 15px;
+  padding: 15px;
 }
 
 .flexContainerLocation {
@@ -637,7 +634,8 @@ height: 20px; */
 }
 
 .locationContainr .flexContainerLocation div:hover {
-  color: rgba(244, 47, 47, 0.447);
+  background-color: rgba(244, 47, 47, 0.447);
+  
 }
 .flexContainer2 {
   width: 98%;
@@ -650,8 +648,14 @@ height: 20px; */
 }
 
 #locationBit{
-
   text-align: center;
+  padding: 5px;
+  background-color: #629c698a;
+}
+
+#location {
+  padding-top: 20px;
+  font-weight: bold;
 }
 
 
