@@ -43,23 +43,23 @@ function getMainAttractions(latitude,longitude){
         
     let attraction1Name =`Name: `+ ` `+ `${data[0].name}`;
     let attraction1Dist =` Distance: `+ ` `+`${data[0].dist}`+` `+`meters.`;
-    let attraction1Rate = ` Rating: `+` `+`${data[0].rate}`;
+    let attraction1Rate = ` Rating: `+` `+`${data[0].rate}`+ ` `+`/10` ;
 
     let attraction2Name =`Name: `+ ` `+ `${data[1].name}`;
     let attraction2Dist =` Distance: `+ ` `+`${data[1].dist}`+` `+`meters.`;
-    let attraction2Rate =` Rating: `+` `+`${data[1].rate}`+` `+`meters.`;
+    let attraction2Rate =` Rating: `+` `+`${data[1].rate}`+ ` `+`/10` ;
 
     let attraction3Name  =`Name: `+ ` `+ `${data[2].name}`;
     let attraction3Dist =` Distance: `+ ` `+`${data[2].dist}`+` `+`meters.`;
-    let attraction3Rate =` Rating: `+` `+`${data[2].rate}`;
+    let attraction3Rate =` Rating: `+` `+`${data[2].rate}`+ ` `+`/10` ;
 
     let attraction4Name =`Name: `+ ` `+ `${data[3].name}`;
-    let attraction4Dist =` Distance: `+ `m `+`${data[3].dist}`+` `+`meters. `;
-    let attraction4Rate =` Rating: `+` `+`${data[3].rate}`;
+    let attraction4Dist =` Distance: `+ ` `+`${data[3].dist}`+` `+`meters. `;
+    let attraction4Rate =` Rating: `+` `+`${data[3].rate}`+ ` `+`/10` ;
     
     let attraction5Name =`Name: `+ ` `+ `${data[4].name}`;
     let attraction5Dist = ` Distance: `+ ` `+`${data[4].dist}`+ ` `+`meters.`;
-    let attraction5Rate =` Rating: `+` `+`${data[4].rate}` ;
+    let attraction5Rate =` Rating: `+` `+`${data[4].rate}`+ ` `+`/10` ;
 
     console.log(attraction1Dist);
   
