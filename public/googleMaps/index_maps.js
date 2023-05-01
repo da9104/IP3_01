@@ -16,12 +16,6 @@ function initMap() {
   locationButton.style.padding = "5px";
   locationButton.style.borderRadius = "10px";
 
-
-
-
-
-
-
   locationButton.classList.add("custom-map-control-button");
   map.controls[google.maps.ControlPosition.TOP_CENTER].push(locationButton);
   locationButton.addEventListener("click", () => {
