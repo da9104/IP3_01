@@ -48,7 +48,7 @@
         text-align: center;
         white-space: nowrap;
         -webkit-overflow-scrolling: touch;
-        z-index: -10;
+
       }
 
       #offcanvasEx {
@@ -56,10 +56,10 @@
         margin-left: 0px;
         margin-bottom: 0px;
         margin-top: 0px;
+        background-color: #ceedc2;
       }
 
       #nav--header {
-        z-index: -10;
         margin-right: 0px;
         margin-left: 10px;
         margin-bottom: 0px;
@@ -85,11 +85,8 @@
         text-decoration: none;
       }
 
-
-
       #settings {
         text-align: left;
-
       }
 
       #settingsButton {
@@ -128,9 +125,30 @@
 			border: none;
 			border-radius: 5px;
 			font-size: 16px;
-			cursor: pointer;
       z-index: 15;
-		}
+			cursor: pointer;}
+
+      .menu_bar_headings li a{
+        font-size: 25px;
+        color: #3a4536;
+      }
+
+      .menu_bar_headings li a:hover{
+        color: orange;
+      }
+
+      .fw-bold{
+        font-size: 38px;
+        color: #3a4536;
+      }
+
+      .dropDownMenuButton{
+        font-size: 25px;
+      }
+
+       #dropdownMenuButton {
+        font-size: 25px;
+      }
     </style>
 
     <section class="gridcontainer">
@@ -144,7 +162,6 @@
         <img class="menu_icon_home" src="/images/menu_icon.png">
       </div> -->
 
-
       <nav style="z-index: 0;" class="autohide navbar navbar-expand-md fixed-top bg-transparent">
         <div id="nav--header" style="display:flex; flex-direction: column; padding: 0; margin-left: 0; left:0; ">
           <a href="/">
@@ -154,7 +171,7 @@
           margin-bottom: 0px;
           margin-top: 0px;">
           </a>
-          <div class="container-fluid" >
+          <div class="container-fluid" id="nav--header">
             <a class="navbar-brand" data-bs-toggle="offcanvas" href="#offcanvasEx" role="button"
               aria-controls="offcanvasExample" style="padding: 0; margin: 0;">
               <img class="menu_icon_home" src="/images/menu_icon.png" style="padding: 25px 0; margin: 0;">
@@ -170,8 +187,8 @@
           <img src="images2/logo.png" alt="FLOC Logo" class="logo offcanvas-title rounded-circle gap-0 mx-0"
             id="offcanvasExampleLabel">
           <!-- <h5 class="offcanvas-title" id="offcanvasExampleLabel">National Museums Scotland</h5> -->
-          <h6 class="fw-bold" style="font-size: .9rem;">
-            FLOC :: Your travel handbook.
+          <h6 class="fw-bold">
+            FLOC
           </h6>
           <button id="settingsButton" type="button" class="btn-close" data-bs-dismiss="offcanvas"
             aria-label="Close"></button>
