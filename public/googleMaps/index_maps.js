@@ -10,6 +10,18 @@ function initMap() {
   const locationButton = document.createElement("button");
 
   locationButton.textContent = "Pan to Current Location";
+  locationButton.style.fontSize = "20px";
+  locationButton.style.backgroundColor = "#ee7777f1";
+  locationButton.style.border = "#87A889";
+  locationButton.style.padding = "5px";
+  locationButton.style.borderRadius = "10px";
+
+
+
+
+
+
+
   locationButton.classList.add("custom-map-control-button");
   map.controls[google.maps.ControlPosition.TOP_CENTER].push(locationButton);
   locationButton.addEventListener("click", () => {
