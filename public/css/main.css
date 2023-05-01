@@ -1595,7 +1595,7 @@ height: 20px; */
 
 /* media queries */
 
-@media screen and (max-width: 1200px) {
+@media screen and ( max-width: 1200px) {
   body {
     align-items: flex-start;
     justify-content: flex-start;
@@ -1643,8 +1643,9 @@ height: 20px; */
   }
 
   body {
-    background-color: #ceedc2;
-    background-image: url("./images2/1.jpg");
+    /* background-color: #ceedc2; */
+
+    background-image: url("../images2/1.jpg");
   }
 
   .slide {
