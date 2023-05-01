@@ -619,19 +619,13 @@ height: 20px; */
   font-size: 20px;
 }
 
-/* Community Page Styling */
-/* Community Page Styling */
-/* Community Page Styling */
 
-#Community-background-image {
-  background-image: url(../images2/home3.png);
-}
 
-.flexContainer {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 20px;
-}
+
+/* Location Wiget Styling */
+/* Location Wiget Styling */
+/* Location Wiget Styling */
+
 
 .locationContainr {
   padding-left: 15px;
@@ -654,6 +648,27 @@ height: 20px; */
   font-family: Arial, Helvetica, sans-serif;
   border: 1px solid #adaaaa;
 }
+
+#locationBit{
+
+  text-align: center;
+}
+
+
+/* Community Page Styling */
+/* Community Page Styling */
+/* Community Page Styling */
+
+#Community-background-image {
+  background-image: url(../images2/home3.png);
+}
+
+.flexContainer {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
 
 .title {
   margin: auto;
